@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="OOP-2/OOP-2.csproj" />
-  <Project Path="OOP-3/OOP-3.csproj" />
+  <Project Path="OOP-2/OOP-2.csproj" Id="e73510d6-4e5f-42fe-90a4-e1e16549e1fc" />
+  <Project Path="OOP-3/OOP-3.csproj" Id="40b459a7-07fd-459b-b0b8-fa25383208ca" />
 </Solution>

@@ -34,10 +34,16 @@ namespace OOP_3
             IKrediManager tasitKrediManager = new TasitKrediManager();
             IKrediManager konutKrediManager = new KonutKrediManager();
             BasvuruManager basvuruManager = new BasvuruManager();
-            basvuruManager.BasvuruYap(ihtiyacKrediManager,new DatabaseLoggerService());
+            basvuruManager.BasvuruYap(konutKrediManager,new FileLoggerService());
 
             List<IKrediManager> krediler = new List<IKrediManager>() { ihtiyacKrediManager,tasitKrediManager,konutKrediManager};
             basvuruManager.KrediOnBilgilendirme(krediler);
+
+            // interface ile hem manager'in hem de sevrislerin yani iş sınıflarının soyut hallerini dolduruyoruz.
+            // somut hallerini doldurarark somut hallerini kullanıyoruz ama filtreleme için interface istiyoruz.!!
+            // bu işlemleri kullanırken interface göndererek aslında filtreleme işlemi yapmış oluyoruz.
+
+
         }
     }
 }
