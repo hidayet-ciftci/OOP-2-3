@@ -25,8 +25,12 @@ namespace OOP_3
             //IKrediManager tasitKrediManager = new TasitKrediManager();
             //tasitKrediManager.Hesapla();
 
+            // Interface'lerde Referans tutabilir Ama sadece interface özelliği kullanılır
+            // sınıf özelliği kullanılamaz.
+
             //IKrediManager konutKrediManager = new KonutKrediManager();
             //konutKrediManager.Hesapla();
+
             // Interface'lerde Referans tutabilir Ama sadece interface özelliği kullanılır
             // sınıf özelliği kullanılamaz.
 
